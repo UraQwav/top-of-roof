@@ -9,6 +9,9 @@ body{
 p{
 	height: auto;
 }
+a{
+	text-decoration: none;
+}
 .header{
 	display:flex;
 	justify-content: space-between;
@@ -103,6 +106,7 @@ background-repeat: no-repeat;
 	display:flex;
 	justify-content: space-between;
 	/*background-color: rgba(0, 0, 0, 0.2);*/
+	
 	height: 100px;
 	width:100%;
 	color: #333;
@@ -234,25 +238,25 @@ button.scroll_down:before{
 
 .about{
 	display:flex;
-	justify-content: space-around;
 	background-color: #fff;
 	height: 255px;
+	justify-content: space-around;
+	
 }
 .block{
 	display:flex;
-	justify-content: space-around;
 	background: #fafafa; 
 	height: auto;
 	text-align: center;
 	max-width: 1000px;
+	justify-content: space-around;
 }
 .about img{
-    height: 100px;
+    height: 10rem;
     margin-left: 5%;
 	margin-right: 5%;
 }
 .about .block{
-  max-width: 1000px
   text-align: center;
 }
 .about-section-logo{
@@ -267,16 +271,22 @@ button.scroll_down:before{
     padding: 5%;
 } 
 .about-section-element{
+	display:flex;	
+	justify-content: center;
+	flex-direction: column;
 	margin-top: 5%; 
 	margin-right:4%;
-	justify-content: center;
     font-size: 15px;
     font-weight: 400;
     color: #a6a7aa;
     margin-bottom: 15px;
     font-family: Hind,sans-serif;
     line-height: 1.4;
-    padding: 5%;
+	padding: 5%;
+	margin:0 auto;
+}
+.about-section-element div{
+	margin:0 auto;
 }
 .about-section-element h2{
 	color:#17bed2;
@@ -433,6 +443,21 @@ button.scroll_down:before{
 	transition-duration: .7s;
     transition-property: all;
 }
+.form_contact{
+	display: flex;
+	justify-content: space-between;
+	max-width: 575px;
+	margin: 50px auto 0;
+
+}
+.form_contact_img{
+	display: block;
+}
+.form_contact_img img{
+	height:15rem;
+	padding-top: 70%;
+	align-content: center;
+}
 .footer{
 	display:flex;
 	justify-content: space-between;
@@ -479,8 +504,7 @@ button.scroll_down:before{
 
 
 .decor {
-  position: relative;
-  max-width: 400px;
+  width: 40rem;
   margin: 50px auto 0;
   background: #fff;
   border-radius: 30px;
@@ -643,6 +667,9 @@ max-height: 400px;
 	width:100%;
 	margin-bottom: 5%;
 }
+.form_contact_img{
+	display: none;
+}
 .wrapper1{
 	display: none;
 }
@@ -654,6 +681,20 @@ body{
 }
 .content{
 max-height: 495px;
+}
+.about img{
+    height: 5rem;
+    margin-left: 5%;
+	margin-right: 5%;
+}
+.about{
+	padding-top: 10%;
+}
+.yslugi{
+	padding-top: 10%;
+}
+.form_contact_img{
+	display: none;
 }
 }
 }
